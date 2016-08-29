@@ -1,0 +1,63 @@
+<html ng-app="routerApp">
+	<head>
+		<title>GKS SPORTS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" >
+		<link href="lib/css/angular-material.css" rel="stylesheet" >
+		<link href="lib/css/dynamic_tabs.css" rel="stylesheet" >
+		<link href="lib/css/this.css" rel="stylesheet" >
+	</head>
+	<body  ng-controller="controller_root">
+	<div ui-view></div>
+<!-- 		<h1>Angular Node File Upload</h1> -->
+<!--         <form  ng-controller="MyCtrl as up" name="up.upload_form"> -->
+<!--                 Single Image with validations -->
+<!--             <input  -->
+<!--                 type="file"  -->
+<!--                 ngf-select  -->
+<!--                 ng-model="up.file"  -->
+<!--                 name="file"  -->
+<!--                 ngf-pattern="'image/*'" -->
+<!--                 accept="image/*"  -->
+<!--                 ngf-max-size="20MB"  -->
+<!--                 /> -->
+<!--             Image thumbnail: <img style="width:100px;" ng-show="!!up.file" ngf-thumbnail="up.file || '/thumb.jpg'"/> -->
+<!--             <i ng-show="up.upload_form.file.$error.required">*required</i><br> -->
+<!--             <i ng-show="up.upload_form.file.$error.maxSize">File too large  -->
+<!--             {{up.file.size / 1000000|number:1}}MB: max 20M</i> -->
+<!--             <div class="button" ngf-select ng-model="up.files" ngf-multiple="true">Select</div> -->
+<!--             Drop files: <div ngf-drop ng-model="up.files" class="drop-box">Drop</div>  -->
+<!--             <button type="submit" ng-click="up.submit()">submit</button> -->
+<!--             <p>{{up.progress}}</p> -->
+<!--         </form> -->
+	</body>
+	<script src="lib/js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script src="lib/js/angular-ui-router.min.js"></script>
+	<script src="lib/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
+	<script type="text/javascript" src="node_modules/ng-file-upload/dist/ng-file-upload-shim.min.js"></script>
+	
+
+	<script type="text/javascript" src="lib/app.js"></script>
+<!-- 	<script type="text/javascript" src="main.js"></script> -->
+	<script src="lib/controller_root.js"></script>
+	<script src="lib/new_all_provider.js"></script>
+	<script src="Routs/routs_company_pages.js"></script>
+	<script src="panels/common_things/navbar/controller_navbar.js"></script>
+	
+	<script src="panels/company_pages/dashboard/controller_dashboard.js"></script>
+	<script src="panels/company_pages/tag_center_tagvideo_form/controller_tag_center_tagvideo_form.js"></script>
+	<script src="panels/company_pages/tag_center_login/controller_tag_center_login.js"></script>
+	<script src="panels/company_pages/node_session/controller_node_session.js"></script>
+	<script src="panels/company_pages/sponsor_login/controller_sponsor_login.js"></script>
+	<script src="panels/company_pages/sponsor_dashboard/controller_sponsor_dashboard.js"></script>
+	<script src="panels/company_pages/sponsor_videos/controller_sponsor_videos.js"></script>
+	<script src="panels/company_pages/sponsor_upload_logo/controller_sponsor_upload_logo.js"></script>
+	<script src="panels/company_pages/sponsor_upload_advertisement/controller_sponsor_upload_advertisement.js"></script>
+	<script src="panels/company_pages/sponsor_upload_document/controller_sponsor_upload_document.js"></script>
+	<script src="panels/company_pages/image_file_upload/controller_image_file_upload.js"></script>
+</html>

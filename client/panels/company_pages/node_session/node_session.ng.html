@@ -1,0 +1,21 @@
+<div ng-controller='controller_node_session'>
+	<input 
+		type="text" 
+		size="40" 
+		placeholder="Type your email" 
+		ng-model="email"
+		class="form-control"
+	><br>
+	
+	<input 
+		type="password" 
+		size="40" 
+		placeholder="Type your password" 
+		ng-model="password"
+		class="form-control"
+	><br>
+	
+	<input type="button" value="Submit" ng-click="submit()">
+	<br>
+	<pre>{{abc | json}}</pre>
+</div>
